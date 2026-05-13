@@ -306,8 +306,10 @@ URSP 업데이트는 SIM 내부 파일 테이블 의존성 때문에 자동으�
 ### 대용량 분할 전송
 
 TLV 데이터가 커서 Step 2의 OTA 메시지가 137바이트를 초과하면, 자동으로 **Concatenated SMS**로 분할 전송됩니다:
-- Part 1 → 0.2초 대기 → Part 2 (Modem Reset 없음)
+- Part 1 → 0.2초 대기 → Part 2
 - 모든 파트 전송 완료 후에만 Modem Reset 실행
+
+**결과 확인**: 실제 SIM에 값이 정상 기록되었는지는 [SIM AT Command Tool](https://github.com/joostone-ahn/sim-at-command-releases)로 더블체크할 수 있습니다.
 
 ### 실시간 입력 검증
 

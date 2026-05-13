@@ -14,7 +14,7 @@ SIM OTA(Over-the-Air) 메시지를 단말에 전송하려면 통상 OTA 서버 �
 - **URSP 3단계 자동 처리** — UST OFF → Modem Reset → UST ON + URSP 업데이트
 - **IMS SMS 주입** — adb 기반 SIP MESSAGE 루프백 자기주입 (개발 모드)
 - **자동 Modem Reset** — REFRESH 미발생 시 AT+CFUN=0/1 자동 실행 + 폴링 복구
-- **APDU 색상 미리보기** — CLA / INS / P1 / P2 / Lc / Data 구분 표시
+- **APDU 생성 미리보기** — CLA / INS / P1 / P2 / Lc / Data 바이트별 색상 구분
 - **KID2 자동 채움** — MSISDN 기반 OTA Key 매칭 (`test_profile.json`)
 - **세션 로깅** — 매 전송마다 `logs/` 디렉토리에 meta.json 자동 저장
 
@@ -24,7 +24,7 @@ SIM OTA(Over-the-Air) 메시지를 단말에 전송하려면 통상 OTA 서버 �
 
 ## 📖 사용 방법
 
-자세한 사용법은 [사용자 가이드](manual/user_guide_kr_v1.0.0.md)를 참고하세요.
+자세한 사용법은 [사용자 가이드](https://github.com/joostone-ahn/sim-ota-test-releases/blob/main/manual/user_guide_kr_v1.0.0.md)를 참고하세요.
 
 ## 📚 참고 규격
 
