@@ -2,6 +2,8 @@
 
 OTA 서버 인프라 없이 PC에서 직접 SIM OTA envelope을 생성하고 단말에 전송하는 웹 기반 도구.
 
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)
+
 ## 💡 이 도구가 필요한 이유
 
 SIM OTA 메시지를 단말에 전송하려면 통상 OTA 서버 인프라가 필요합니다. 이 도구는 USB 시리얼 포트의 AT+CSIM 명령을 통해 ENVELOPE APDU를 직접 SIM에 전달하여, 서버 없이도 BIP 트리거와 RFM(Remote File Management)을 수행할 수 있습니다. SIM을 물리적 리더기에 연결하지 않고 단말 USB 연결만으로 SIM 파일을 업데이트할 수 있으며, eSIM only 디바이스에서도 동일하게 동작합니다. 대용량 데이터는 Concatenated SMS로 자동 분할 전송됩니다.
@@ -47,3 +49,7 @@ Role: Technical Specialist, Telecommunications Engineer
 ## 📄 License
 
 © 2026 JUSEOK AHN <ajs3013@lguplus.co.kr>. All rights reserved.
+
+This software is provided free of charge for personal and internal use.
+You may not modify, distribute, sublicense, or sell copies of this software
+without explicit written permission from the author.
